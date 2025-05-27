@@ -33,3 +33,5 @@ The enemy's behaviour uses a limited set of actions, which may lead to repetitiv
 The enemy's behavior may break in specific scenarios.
 
 Some character images may not display the correct avatar.
+
+Depending on screen size, the text inside playable cards may not wrap properly and not be fully visible.
