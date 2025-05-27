@@ -23,3 +23,13 @@ The green window represents the support card area, where the player and oppenent
 The orange window contains the buttons respnsible for the characters' abilities. The abilities will change with the selected character. Certain abilities require a target, which will have to be selected after the ability. All information related to a character's abilities is included in that character's ability information tab.
 
 The bright red window contains an action log, displaying the last action taken by either the player or the opponent. The player is P1, while the opponent is P2.
+
+# Known faults
+
+Occasionally, at the beginning of a new game, one random card in the player's hand may have an inactive button. Returning to menu and starting a new game fixes this.
+
+The enemy's behaviour uses a limited set of actions, which may lead to repetitive gameplay.
+
+The enemy's behavior may break in specific scenarios.
+
+Some character images may not display the correct avatar.
