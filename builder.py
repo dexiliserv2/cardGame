@@ -33,10 +33,26 @@ class displayChar:
         self.line2 = ttk.Label(self.t1, text='   ATK: ' + str(self.ATK) + '\t\t  MP: ' + str(self.MP), style='CharLabel.TLabel')
         self.line2.grid(row=1, sticky='w', ipadx=25, ipady=5)
 
-        self.charImgOriginal = Image.open('alaya.png').resize((100, 100))
+        match self.name:
+            case 'Alaya':
+                self.charImgOriginal = Image.open('alaya.png').resize((100, 100))
+            case 'Balom':
+                self.charImgOriginal = Image.open('balom.png').resize((100, 100))
+            case 'Moss':
+                self.charImgOriginal = Image.open('moss.png').resize((100, 100))
+            case 'Nilsa':
+                self.charImgOriginal = Image.open('nilsa.png').resize((100, 100))
+            case 'Kiave':
+                self.charImgOriginal = Image.open('kiave.png').resize((100, 100))
+            case 'Souset':
+                self.charImgOriginal = Image.open('souset.png').resize((100, 100))
+            case 'Phael':
+                self.charImgOriginal = Image.open('phael.png').resize((100, 100))
+            case _:
+                self.charImgOriginal = Image.open('alaya.png').resize((100, 100))
         self.charImage = ImageTk.PhotoImage(self.charImgOriginal)
         self.pic = ttk.Label(self.t1, image=self.charImage)
-        self.pic.grid(row=3, sticky='nswe', ipadx=5, ipady=5)
+        self.pic.grid(row=3, column=0, sticky='nswe', ipadx=5, ipady=5)
 
         self.t2 = tk.Frame(self.n, bg='#a7c4a9')
         self.n.add(self.t2, text='Abilities')
